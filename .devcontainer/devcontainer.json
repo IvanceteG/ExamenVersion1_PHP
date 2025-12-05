@@ -1,0 +1,17 @@
+{
+  "name": "PHP Dev Environment",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "."
+  },
+  "forwardPorts": [80],
+  "postCreateCommand": "php -m",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "felixfbecker.php-debug",
+        "bmewburn.vscode-intelephense-client"
+      ]
+    }
+  }
+}
